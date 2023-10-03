@@ -1,6 +1,6 @@
 /*
-Author: Maria Cruz
-Date: Current Date
+Author: Jacob Day
+Date: 10/3/23
 File Name: styles.css
 */
 
@@ -139,4 +139,83 @@ footer {
 footer a {
     color: #f6eee4;
     text-decoration: none;
+}
+
+/* Media query for tablet viewport */
+@media screen and (min-width:620px), print {
+    
+    /* Tablet viewport: Show tablet-desktop class, hide mobile class */
+    .tab-desk {
+        display: block;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+    /* Tablet viewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+    }
+    
+    nav li a {
+        padding: 0.5em;
+    }
+    
+}
+
+/* Media query for large desktop viewports */
+@media screen and (min-width: 1921px) {
+    
+    body {
+        background: linear-gradient(to right, #f6eee4, #78593a);
+    }
+    
+    #wrapper {
+        width: 1920px;
+        margin: 0 auto;
+    }
+    
+    main {
+        background-color: #f6eee4
+    }
+    
+}
+
+/* Media query for print */
+@media print {
+    
+    body {
+        background-color: white;
+        font color: black;
+    }
+    
+}
+
+/* Media query for desktop viewport */
+@media screen and (min-width: 1000px), print {
+    
+    /* Desktop viewport: Style rules for nav area */
+    nav li {
+        font-size: 1.5em;
+    }
+    
+    nav li a {
+        padding: 0.5em 1.5em;
+    }
+    
+    nav li a:hover {
+        color: #2a1f14;
+        background-color: #f6eee4;
+    }
+    
+    /* Desktop viewport: Style rules for main content */
+    #info ul {
+        margin-left: 5%;
+    }
+    
+    
+    
 }
